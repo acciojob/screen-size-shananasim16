@@ -1,12 +1,5 @@
-
-window.addEventListener('resize', displayWindowSize);
-
-
-function displayWindowSize() {
-    let width = window.innerWidth;
-    let height = window.innerHeight;
-    let sizeInfo = document.getElementById('sizeInfo');
-    sizeInfo.innerHTML = `<h1>Width: ${width} and Height: ${height}</h1>`;
-}
-
-displayWindowSize();
+function getSize() {
+			var w = document.documentElement.clientWidth;
+			var h = document.documentElement.clientHeight;
+			document.getElementById('sizeInfo').innerHTML = "<h1>Width: " + w + " and Height: " + h + "</h1>";
+		}
