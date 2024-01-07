@@ -1,12 +1,13 @@
-//your JS code here. If required.
-window.addEventListener('resize', displayWindowSize);
+function updateSize() {
+  const width = window.innerWidth;
+  const height = window.innerHeight;
 
-
-function displayWindowSize() {
-    let width = window.innerWidth;
-    let height = window.innerHeight;
-    let sizeInfo = document.getElementById('sizeInfo');
-    sizeInfo.innerHTML = <h1>Width: ${width} and Height: ${height}</h1>;
+  // Display the width and height
+  console.log(Window width: ${width}, Window height: ${height});
 }
 
-displayWindowSize();
+// Event listener for window resize
+window.addEventListener("resize", updateSize);
+
+// Initial call to display the width and height on load
+updateSize();
